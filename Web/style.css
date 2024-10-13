@@ -1,0 +1,24 @@
+.H1TEXTO{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    font-size: 40px;
+    color: brown;
+}
+
+.ulcenter{
+    font-size: 20px;
+}
+
+    .socorro{
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.socorro2{
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+}
