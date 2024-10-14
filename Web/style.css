@@ -56,3 +56,40 @@ text-align: center;
 }
 
 /*Final index*/
+
+/*Inicio Lulu*/
+.t3center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: brown;   
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+.card {
+    flex: 1 1 calc(25% - 1rem); 
+    max-width: 18rem;
+}
+
+
+.background{
+    background-color: black;
+    color: red;
+}
+
+/*Final Lulu*/
+
+/*Início ble*/
+.TEXTBLE{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+
+}
