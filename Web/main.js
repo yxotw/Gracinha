@@ -1,3 +1,4 @@
+window.dpipadrao = 6400;
 function calcularValores() {
     var valor1 = parseFloat(document.getElementById('input1').value);
     var valor2 = parseFloat(document.getElementById('input2').value);
@@ -7,7 +8,7 @@ function calcularValores() {
         return; 
     }
 
-    var resultado = valor1 + valor2;
+    var resultado = (dpipadrao/valor1) * valor2;
 
     document.getElementById('input3').value = resultado;
   }
@@ -18,3 +19,5 @@ function calcularValores() {
       calcularValores();
     });
   }
+
+  
