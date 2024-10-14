@@ -38,7 +38,7 @@ tela.title('Vossa tela')
 tela.geometry('500x500')
 tela.resizable(False, False)
 
-texto = ctk.CTkLabel(tela, text='Calculadora da Graçinha', font=('Inter', 40))
+texto = ctk.CTkLabel(tela, text='Calculadora da Gracinha', font=('Inter', 40))
 texto.pack()
 
 frame_input = CTkFrame(tela)
