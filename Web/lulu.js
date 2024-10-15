@@ -1,4 +1,4 @@
-// Definindo os valores padrões globais
+//variavel predefinida do dpi do lulu
 window.dpipadrao2 = 400;
 
 function calcularValores2() {
