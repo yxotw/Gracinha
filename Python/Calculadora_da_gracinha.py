@@ -10,6 +10,7 @@ from PIL import ImageTk, Image
 import pyglet
 import webbrowser
 
+    
 def fechar_tela():
     tela.destroy()
 
@@ -32,9 +33,19 @@ def calcular():
     divisao = n1 / n2
     result3.configure(text=f'Resutlado da Divisão: {divisao}')
     
+    #Produto Notável +
+    n1 = float(input1.get())
+    n2 = float(input2.get())
+    prdt = (n1+n2)*(n1+n2)
+    result4.configure(text=f'Resultado do Produto Notável(+): {prdt}')
+    
+def limpar_tela():
+    input1.delete(0, ctk.END)
+    input2.delete(0, ctk.END)
+
 #Tela    
 tela = ctk.CTk()
-tela.title('Vossa tela')
+tela.title('Graçinha')
 tela.geometry('500x500')
 tela.resizable(False, False)
 
@@ -65,7 +76,13 @@ result2.pack()
 result3 = ctk.CTkLabel(frame_result, text='Resulta da Divisão: ',font=('Inter', 20))
 result3.pack()
 
+result4 = ctk.CTkLabel(frame_result, text='Resultado do Produto Nótavel(+): ',font=('Inter', 20))
+result4.pack()
+
 butao_fechar = ctk.CTkButton(tela, text='Fechar', command=fechar_tela)
 butao_fechar.pack(pady=50)
+
+butao_limpar = ctk.CTkButton(tela, text='Limpar', command=limpar_tela)
+butao_limpar.pack()
 
 tela.mainloop()#Final do Codigo
