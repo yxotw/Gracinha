@@ -39,6 +39,12 @@ def calcular():
     prdt = (n1+n2)*(n1+n2)
     result4.configure(text=f'Resultado do Produto Notável(+): {prdt}')
     
+    #Raiz Quadrada da soma desses valores
+    n1 = float(input1.get())
+    n2 = float(input2.get())
+    raiz = (n1+n2)**(1/2)
+    result5.configure(text=f'Resultado da Raiz Quadrada da soma desses valores: {raiz}')
+    
 def limpar_tela():
     input1.delete(0, ctk.END)
     input2.delete(0, ctk.END)
@@ -46,7 +52,7 @@ def limpar_tela():
 #Tela    
 tela = ctk.CTk()
 tela.title('Graçinha')
-tela.geometry('500x500')
+tela.geometry('800x600')
 tela.resizable(False, False)
 
 texto = ctk.CTkLabel(tela, text='Calculadora da Gracinha', font=('Inter', 40))
@@ -78,6 +84,9 @@ result3.pack()
 
 result4 = ctk.CTkLabel(frame_result, text='Resultado do Produto Nótavel(+): ',font=('Inter', 20))
 result4.pack()
+
+result5 = ctk.CTkLabel(frame_result, text='Raiz quadrada da soma desses números: ',font=('Inter',20))
+result5.pack()
 
 butao_fechar = ctk.CTkButton(tela, text='Fechar', command=fechar_tela)
 butao_fechar.pack(pady=50)
