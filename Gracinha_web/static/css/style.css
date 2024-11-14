@@ -1,0 +1,113 @@
+/*Inicio index*/
+.H1TEXTO{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    font-size: 40px;
+    color: brown;
+}
+
+.t1center{
+text-align: center;
+}
+
+.ulcenter{
+    font-size: 20px;
+}
+
+.socorro{
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.socorro label{
+    font-size: 30px;
+}
+
+.socorro input{
+    width: 200px;
+    height: 30px;
+}
+
+.socorro2{
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.btn_calc{
+    border-radius: 30px;
+    background-color: white;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.btn_resetar{
+    border-radius: 30px;
+    background-color: white;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Final index*/
+
+/*Inicio Lulu*/
+.t3center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: brown;   
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+.card {
+    flex: 1 1 calc(25% - 1rem); 
+    max-width: 18rem;
+}
+
+
+.background{
+    background-color: black;
+    color: red;
+}
+
+input{
+    border-radius: 30px;
+}
+/*Final Lulu*/
+
+/*Início ble*/
+.textbleble{
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+
+}
+.Dpible{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+
+.t1center{
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+
+
+/*Final Bleble*/
