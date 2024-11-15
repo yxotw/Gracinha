@@ -52,7 +52,7 @@ def limpar_tela():
 #Tela    
 tela = ctk.CTk()
 tela.title('Graçinha')
-tela.geometry('800x600')
+tela.geometry('800x800')
 tela.resizable(False, False)
 
 texto = ctk.CTkLabel(tela, text='Calculadora da Gracinha', font=('Inter', 40))
