@@ -29,7 +29,6 @@ def create_app():
     def form_persa():
         return render_template('persa.html')
 
-from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
@@ -52,4 +51,33 @@ def calc_persa():
     return render_template('persa.html')
 
 if __name__ == '__main__':
+    app.run(debug=True)
+    
+from flask import Flask, request, render_template, redirect, url_for, flash
+
+app = Flask(__name__)
+app.secret_key = 'sua_chave_secreta_aqui'  # Necessário para usar flash messages
+
+@app.route("/teuzz", methods=['GET', 'POST'])
+def calc_teuzz():
+    if request.method == 'POST':
+        try:
+            # Tenta obter os valores do formulário e realizar os cálculos
+            teuzzdpi = float(request.form['teuzzdpi'])
+            teuzzxy = float(request.form['teuzzxy'])
+
+            dpi_teuzz = 800
+            teuzz_sensi = (dpi_teuzz / teuzzdpi) * teuzzxy
+
+            return render_template('resultado.html', sensi=teuzz_sensi)
+
+        except ValueError:
+            # Exibe uma mensagem de erro se os valores não forem numéricos
+            flash('Erro: Por favor, insira valores numéricos válidos.')
+            return redirect(url_for('calc_teuzz'))
+
+    # Renderiza a página inicial com o formulário
+    return render_template('teuzz.html')
+
+if __name__ == "__main__":
     app.run(debug=True)
