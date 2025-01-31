@@ -12,7 +12,7 @@ function calcularValores2() {
     }
 
     // Realiza o cálculo
-    var resultado = (dpipadrao2 / valor3) * valor4;
+    var resultado = (dpipadrao2 * valor4) / valor3;
 
     // Exibe o resultado
     document.getElementById('input3').value = resultado.toFixed(2); // Arredondar para duas casas decimais

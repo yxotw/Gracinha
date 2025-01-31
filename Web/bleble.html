@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bleble</title>
     <link rel="stylesheet" href="style.css">
-    <script src="bleble.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>GracinhaMaxima</title>
 </head>
 <body>
+  <script src="lulu.js"> </script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">GracinhaMaxima</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Colocar Função</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Colocar Função</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-    <ul class="ulcenter">
-      <a href="bleble.html"><li>Bleble</li></a>
-      <a href="lulu.html"><li>Lulu</li></a>
-      <a href="index.html"><li>GracinhaMaxima</li></a>
-    </ul>
+      <div class="background">
+        <div class="card-container d-flex justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lado Teuz da Força</h5>
+                    <p class="card-text">Trocar o texto</p>
+                    <a href="teuz.html" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+            <h1 class="escolha">ESCOLHA SEU LADO</h1>    
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lado Lulu da força</h5>
+                    <p class="card-text">Trocar o texto</p>
+                    <a href="lulu.html" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+        </div>
 
     <form action="">
-      <fieldset>
-          <h1 class="t1center">Calculadora Da Gracinha Máxima</h1>
-          <h1 class="textbleble">Vamos calcular a proporção da sua sensi com a do bleble </h1>
-        <div class="socorro">
-
-          <label for="input1">Digite Sua DPI:</label>
-          <input type="number" placeholder="" class="input1" id="input1">
-          <br>
-
-          <label for="input2">Digite Seu X e seu Y:</label>
-          <input type="number" placeholder="" class="input2" id="input2">
-          <br>
-
-          <label for="input3">Esse é o seu novo X e Y:</label>
-          <input type="number" placeholder="" class="input3" id="input3" readonly>
-
-          <h3 class="Dpible">Levando em consideração que a dpi do bleble é: 6400dpi</h3>
-
-        </div>
-        
-        <div class="socorro2">
-            <button type="reset" class="btn_resetar">Resetar</button>
-            <button class="btn_calc" id="btn_calc">Calcular</button>
-        </div>
-    
-      </fieldset>
+        <fieldset>
+            <h1 class="t1center">Calculadora Da Gracinha Máxima</h1>
+            <h1 class="textbleble">Vamos calcular a proporção da sua sensi com a do Bleble</h1>
+          <div class="socorro">
+            <label for="input1">Digite Sua DPI:</label>
+            <input type="number" placeholder="" class="input1" id="input1">
+            <br>
+            <label for="input2">Digite Seu X e seu Y:</label>
+            <input type="number" placeholder="" class="input2" id="input2">
+            <br>
+            <label for="input3">Esse é o seu novo X e Y:</label>
+            <input type="number" placeholder="" class="input3" id="input3" readonly>
+            <h3 class="Dpible">Levando em consideração que a dpi do Bleble é: 6400dpi</h3>
+          </div>
+          <div class="socorro2">
+              <button type="reset" class="btn_resetar">Resetar</button>
+              <button type="button" class="btn_calc" id="btn_calc">Calcular</button>
+          </div>
+        </fieldset>
     </form>
+
 
 </body>
 </html>

@@ -10,9 +10,9 @@ function calcularValores() {
         return; 
     }
 
-    var resultado = (dpipadrao/valor1) * valor2;
+    var resultado = (dpipadrao * valor2) / valor1;
 
-    document.getElementById('input3').value = resultado;
+    document.getElementById('input3').value = resultado.toFixed(2);
   }
 
   window.onload = function() {
